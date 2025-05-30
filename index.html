@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  
+  <section id="landing">
+    <h1>Welcome to My Photo Gallery 🌸🐾</h1>
+    <p>"A picture is a poem without words." – Horace</p>
+    <button id="proceedBtn">Proceed to Gallery</button>
+    <img src="stickers/cat.png" class="float cat">
+    <img src="stickers/flower.png" class="float flower">
+  </section>
+
+  <section id="gallery" style="display: none;">
+    <header>
+      <h2>🌼 Whiskers & Wildflowers 🐱</h2>
+    </header>
+
+    <div class="filters">
+      <button class="filter-btn" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="cat">Cats</button>
+      <button class="filter-btn" data-filter="flower">Flowers</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button id="shuffleBtn">Shuffle Images 🔀</button>
+      <button id="toggleModeBtn">Toggle Mode 🌙</button>
+    </div>
+
+
+    <div class="gallery-container" id="gallery-container">
+      <!-- Flowers -->
+      <img
+        src="https://plus.unsplash.com/premium_photo-1676475964992-6404b8db0b53?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Flower 1">
+      <img
+        src="https://images.unsplash.com/photo-1541275055241-329bbdf9a191?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Flower 2">
+      <img
+        src="https://images.unsplash.com/photo-1582794543139-8ac9cb0f7b11?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Flower 3">
+      <img
+        src="https://images.unsplash.com/photo-1486944859394-ed1c44255713?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Flower 4">
+      <img
+        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Zmxvd2Vyc3xlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Flower 5">
+
+      <!-- Cats -->
+      <img
+        src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+        class="cat" alt="Cat 1">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1673967831980-1d377baaded2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+        class="cat" alt="Cat 2">
+      <img
+        src="https://images.unsplash.com/photo-1536590158209-e9d615d525e4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+        class="cat" alt="Cat 3">
+      <img
+        src="https://images.unsplash.com/photo-1536589961747-e239b2abbec2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+        class="cat" alt="Cat 4">
+      <img
+        src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D"
+        class="cat" alt="Cat 5">
+
+      <!-- Nature -->
+      <img
+        src="https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJlfGVufDB8fDB8fHww"
+        class="nature" alt="Nature 1">
+      <img
+        src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww"
+        class="nature" alt="Nature 2">
+      <img
+        src="https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fHww"
+        class="nature" alt="Nature 3">
+      <img
+        src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+        class="nature" alt="Nature 4">
+      <img
+        src="https://images.unsplash.com/photo-1529419412599-7bb870e11810?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+        class="nature" alt="Nature 5">
+
+      <!-- Mixed Aesthetic -->
+      <img
+        src="https://images.unsplash.com/photo-1553586223-794143754fa4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlJTIwZmxvd2VyfGVufDB8fDB8fHww"
+        class="nature flower" alt="Mixed 1">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1690031000842-1ac0508f18b7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Zmxvd2VyJTIwbmF0dXJlfGVufDB8fDB8fHww"
+        class="flower nature" alt="Mixed 2">
+      <img
+        src="https://images.unsplash.com/photo-1670737494241-8ea5cdf6bfa0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhdCUyMGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+        class="cat flower" alt="Mixed 3">
+      <img
+        src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+        class="nature" alt="Mixed 4">
+      <img
+        src="https://images.unsplash.com/photo-1447875569765-2b3db822bec9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Mixed 5">
+
+      <!-- Extra Beauties -->
+      <img
+        src="https://images.unsplash.com/photo-1548546738-8509cb246ed3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNhdHN8ZW58MHx8MHx8fDA%3D"
+        class="cat" alt="Extra 1">
+      <img
+        src="https://images.unsplash.com/photo-1470509037663-253afd7f0f51?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Extra 2">
+      <img
+        src="https://plus.unsplash.com/premium_photo-1673697239981-389164b7b87f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bmF0dXJlfGVufDB8fDB8fHww"
+        class="nature" alt="Extra 3">
+      <img
+        src="https://images.unsplash.com/photo-1532386236358-a33d8a9434e3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGNhdHN8ZW58MHx8MHx8fDA%3D"
+        class="cat" alt="Extra 4">
+      <img
+        src="https://images.unsplash.com/photo-1474112704314-8162b7749a90?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D"
+        class="flower" alt="Extra 5">
+    </div>
+
+
+    <div id="lightbox" class="lightbox hidden">
+      <span class="close">&times;</span>
+      <img class="lightbox-img" src="" alt="Large View" />
+      <button class="prev">⟨</button>
+      <button class="next">⟩</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
