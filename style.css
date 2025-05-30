@@ -249,7 +249,7 @@ body.dark-mode {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   #gallery {
     padding: 20px 10px;
   }
