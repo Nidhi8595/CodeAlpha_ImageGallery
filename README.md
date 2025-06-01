@@ -1,5 +1,7 @@
 # 🌸 CodeAlpha Image Gallery 🐾
 
+https://nidhi8595.github.io/CodeAlpha_ImageGallery/
+
 Welcome to **CodeAlpha Image Gallery** – a modern, interactive, and aesthetic photo gallery web app to showcase your favorite images of cats, flowers, and nature!
 
 ---
@@ -62,4 +64,3 @@ Welcome to **CodeAlpha Image Gallery** – a modern, interactive, and aesthetic 
 
 Enjoy your stunning, interactive image gallery!
 
-https://nidhi8595.github.io/CodeAlpha_ImageGallery/
