@@ -27,6 +27,16 @@ Welcome to **CodeAlpha Image Gallery** – a modern, interactive, and aesthetic 
 
 ---
 
+## Some Snapshots
+
+> ![alt text](<Screenshot (81).png>)
+> ![alt text](<Screenshot (82).png>)
+> ![alt text](<Screenshot (83).png>)
+> ![alt text](<Screenshot (84).png>)
+> ![alt text](<Screenshot (85).png>)
+> ![alt text](<Screenshot (86).png>)
+> ![alt text](<Screenshot (87).png>)
+
 ## 📁 Project Structure
 
 - `index.html` – Main HTML file with landing and gallery sections.
