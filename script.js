@@ -48,11 +48,6 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   });
 });
 
-document.getElementById('proceedBtn').addEventListener('click', () => {
-  document.getElementById('landing').style.display = 'none';
-  document.getElementById('gallery').style.display = 'block';
-});
-
 // Toggle dark/light mode
 document.getElementById('toggleModeBtn').addEventListener('click', () => {
   document.body.classList.toggle('dark-mode');
